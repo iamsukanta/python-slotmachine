@@ -46,3 +46,15 @@ print(list2)  # [4, 8]
 list = ['apple', 'banana', 'cherry']
 new_list = [x for x in list if x != 'banana']
 print(new_list)
+
+#  Deep copy vs Shallow copy
+
+import copy
+
+original = [[1, 2, 3], [4, 5, 6]]
+shallow_copied = copy.copy(original)
+deep_copied = copy.deepcopy(original)
+original[0][0] = 99
+print(original)         # [[99, 2, 3], [4, 5, 6]]
+print(shallow_copied)  # [[99, 2, 3], [4, 5, 6]]
+print(deep_copied)     # [[1, 2, 3], [
