@@ -121,6 +121,6 @@ print(nums)
 num_gen = (i**2 for i in range(100))
 print(num_gen)
 
-for x in num_gen:
-    print(x)
+# for x in num_gen:
+#     print(x)
     
