@@ -123,4 +123,21 @@ print(num_gen)
 
 # for x in num_gen:
 #     print(x)
+
+
+class Demo:
+    @staticmethod
+    def stat3():
+        print("Static method")
+
+    @classmethod
+    def cls5(cls):
+        print(f"Class method of {cls.__name__}")
+
+    def inst(self):
+        print("Instance method", self)
+
+Demo.stat3()
+Demo.cls5()
+Demo().inst()
     
