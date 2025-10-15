@@ -81,3 +81,46 @@ print(squared_list)  # [25, 4, 81, 1]
 students = [('John', 25), ('Jane', 22), ('Dave', 23)]
 sorted_students = sorted(students, key=lambda x: x[1], reverse=True)
 print(sorted_students)  # [('John', 25), ('Dave', 23), ('Jane', 22)]
+
+# decoratores
+def decorator_function(func):
+    def wrapper():
+        print("Before function execution")
+        return func().upper()
+    return wrapper
+
+# @decorator_function
+
+def say_hello():
+    return "Helluuuuo!"
+
+
+def say_hello():
+    return "Hello!"
+
+print(say_hello())
+print(say_hello())
+
+
+def my_decorator(func):
+    def inner(x):
+        return func(x).upper()
+    return inner
+
+@my_decorator
+def greet(name):
+    return "Hello " + name; 
+
+print(greet('Sukanta'))
+
+# Generator
+
+nums = [i**2 for i in range(100)]
+print(nums)  
+
+num_gen = (i**2 for i in range(100))
+print(num_gen)
+
+for x in num_gen:
+    print(x)
+    
