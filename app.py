@@ -77,3 +77,7 @@ def square(x):
     return x*x
 squared_list = list(map(square, list1))
 print(squared_list)  # [25, 4, 81, 1]
+
+students = [('John', 25), ('Jane', 22), ('Dave', 23)]
+sorted_students = sorted(students, key=lambda x: x[1], reverse=True)
+print(sorted_students)  # [('John', 25), ('Dave', 23), ('Jane', 22)]
