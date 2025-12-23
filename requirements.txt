@@ -489,6 +489,7 @@ python-multipart==0.0.20
 pytz==2025.2
     # via pandas
 pyyaml==6.0.2
+qdrant-client==1.16.2
     # via
     #   gradio
     #   huggingface-hub
@@ -546,6 +547,7 @@ scipy==1.15.3
 semantic-kernel==1.32.2
     # via agents (pyproject.toml)
 semantic-version==2.10.0
+sentence-transformers==5.2.0
     # via gradio
 sendgrid==6.12.3
     # via agents (pyproject.toml)
